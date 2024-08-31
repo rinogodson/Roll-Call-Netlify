@@ -12,7 +12,7 @@
     padding: 20px;
     border: 1px solid black;
     border-radius: 20px;
-    width: 100vw;
+    width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,7 +28,7 @@ h1{
 }
 
 li{
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .cont{
@@ -38,11 +38,13 @@ li{
     position: relative;
     background-color: rgba(0, 0, 0, 0.763);
     box-shadow: 0px 0px 100px 1000px rgba(0, 0, 0, 0.763);
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
+    overflow: scroll;
+    overflow-x: visible;
     gap: 20px;
-    transform: scale(0.7);
+    transform: scale(1) translateY(-400px);
 }
 
 .list{

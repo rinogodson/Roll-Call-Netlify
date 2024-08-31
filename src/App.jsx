@@ -85,7 +85,12 @@ function App() {
 
         <button className="pBt" onClick={()=>{
           setPresentees([...presentees, (students[pointer].no+". "+students[pointer].name)]);
-          setPointer(pointer+1);
+          if(pointer < 59){
+            setPointer(pointer+1);
+          }
+          else{
+            setCStatusVis(true);
+          }
         }}>Present</button> 
 
 
@@ -94,7 +99,12 @@ function App() {
 
         <button className="aBt" onClick={()=>{
           setAbsentees([...absentees, (students[pointer].no+". "+students[pointer].name)]);
-          setPointer(pointer+1);
+          if(pointer < 59){
+            setPointer(pointer+1);
+          }
+          else{
+            setCStatusVis(true);
+          }
         }}>Absent</button>
 
 
